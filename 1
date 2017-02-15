@@ -1,0 +1,4 @@
+FROM openjdk:7-alpine
+COPY HelloWorld.java /
+RUN javac HelloWorld.java
+ENTRYPOINT ["java", "HelloWorld"]
